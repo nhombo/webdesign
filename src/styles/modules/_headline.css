@@ -1,0 +1,35 @@
+.headline{
+    font-size: 1.9rem;
+    @mixin atSmall{
+        font-size: 2.875rem;
+    }
+    font-weight: 500;
+     color: $marronTest;
+     &--centered{
+         text-align: center;
+     }
+     &--couleur-orange{
+         color: $monorange;
+         max-width:31.25rem;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     &--taille-etroite{
+         font-size: 1.3rem;
+         @mixin atSmall{
+            font-size: 1.875rem;
+         }
+     }
+     &--light{
+        font-weight: 200;
+     }
+     &--reduction-margin-basse{
+         margin-bottom: .5em;
+     }
+     &--augmentation-margin-basse{
+        margin-bottom: 1.5em;
+     }
+     &--no-t-margin{
+         margin-top: 0;
+     }
+} 

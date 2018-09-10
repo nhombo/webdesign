@@ -1,0 +1,15 @@
+.page-section{
+    margin: 2rem 0;
+    @mixin atSmall{
+        margin: 4rem 0;
+    }
+    &--bgFeatures{
+        color: #FFF;
+        background-color: #647745;
+        
+    }
+    &__t-margin{
+        
+    }
+    
+}

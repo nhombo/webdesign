@@ -1,0 +1,248 @@
+$maCouleur: linear-gradient(to bottom, #a3b8b3, #eef1f1);
+$autre: red;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 15px;
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+}
+@media screen and (min-width: 1300px){
+  body{
+    font-size: 18px;
+  }
+  .container{
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 480px){
+ .container{
+  padding: 0 15px 0 25px;
+ }
+
+}
+.entete{
+  padding-top: 25px;
+  background-image: linear-gradient(to bottom, #32695d, #aac0c0);
+  color: blue;
+  text-align: center;
+  
+}
+.entete {
+  h1{
+    color: $autre;
+  } 
+}
+@media screen and (max-width: 700px){
+  .entete{
+    position: relative;
+    top: -10px;
+    margin-bottom: -15px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .entete{
+    text-align: left;    
+  }
+}
+
+.entete h1{
+  font-weight: normal;
+  font-size: 190%;
+  margin: 0;
+}
+.entete p{
+  margin: 0;
+}
+
+.navigationSite{
+  margin-top: 35px;
+}
+.navigationSite li{
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+.navigationSite ul{
+  margin:0;
+  padding:0;
+}
+.navigationSite a {
+  display: block;
+  text-decoration: none;
+  background-color: #69806b;
+  color: #FFF;
+  padding: 15px 20px;
+  font-weight: 600;
+  border-bottom: none;
+  transition-property: color, background-color;
+  transition-duration: 2s;
+}
+.navigationSite a:hover{
+  background-color: #e5e6d9;
+  color: #969c9b
+}
+
+@media screen and (max-width: 700px){
+  .navigationSite li{
+    width: 33.333%;
+    margin-right: 0;
+    margin-top: -15px;
+  }
+  .navigationSite a{
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 480px){
+  .navigationSite li{
+    width: 50%;
+  }
+  .navigationSite a{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.group::before,
+.group::after{
+  content: "";
+  display: table;
+}
+.group::after{
+  clear: both;
+}
+.group{
+  zoom: 1;
+}
+.zoneContenu{
+  border-top: 4px #dadfde solid;
+  background-color: #e5e6d9
+}
+@media screen and (max-width: 700px){
+  .zoneContenu{
+    position: relative;
+    top: -20px;
+  } 
+}
+.contenuPrincipal{
+  width: 65%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.imageBannierSite{
+  position: relative;
+  overflow: hidden;
+}
+.imageBannierSite img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all 3s;
+}
+.imageBannierSite img:hover {
+  transform: scale(1.6);
+}
+.descImageBanniere{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  color: #FFF;
+  padding: 15px 20px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translateY(100%);
+}
+.imageBannierSite:hover .descImageBanniere{
+  opacity: 1;
+transform: translateY(0);
+}
+@media screen and (max-width: 700px){
+  .descImageBanniere{
+    padding: -10px 0 -10px 0;
+  }
+}
+@media screen and (max-width: 480px){
+  .descImageBanniere{
+    padding: 0 10px 0 10px;
+  }
+}
+.barreLaterale{
+ width: 35%;
+ float: left;
+ background-color: #dadfde;
+ background-image: $maCouleur;
+ padding: 0 40px 10px 40px;
+ box-sizing: border-box;
+ position: relative;
+ top: 30px;
+}
+.barreLaterale h3{
+  color: #5d8175;
+}
+
+@media screen and (max-width: 480px){
+.cache-data{
+  display: none;
+}
+}
+
+@media screen and (max-width: 700px){
+  .contenuPrincipal, 
+  .barreLaterale{
+    width: auto;
+    float: none; 
+  }
+  .contenuPrincipal{
+    padding-right: 0;
+    position: relative;
+    top: -10px;
+   padding: 10px;
+  }
+
+  .barreLaterale{
+    position: relative;
+    top: -10px;
+    padding-top: 7px;
+  }
+  .cache-data-p2{
+    display: none;
+  }
+}
+.zoneContenu h2{
+  color: #5d8175;
+}
+
+.footer{
+  text-align: center;
+  background-color: #91743e;
+  color: #9da3a1;
+  border-top: 4px #9da3a1 solid;
+width: auto;
+}
+.footer p{
+  margin: 0;
+  padding: 2% 0 2% 0;
+  
+}
+@media screen and ( max-width: 480px){
+  .footer{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 700px){
+  .footer {
+    width: auto;
+    margin-top: -20px;
+  }
+}
+
