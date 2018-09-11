@@ -1,0 +1,42 @@
+.testimonial{
+    background-color: rgba(255, 255, 255, .8);
+    padding: 0 1.125rem .3rem 1.125rem; 
+    margin-bottom: 6rem;
+    @mixin atLarge{
+        margin-bottom: 2rem;
+        padding: 0 1.8125rem .3rem 1.8125rem; 
+    }
+    &__photo{
+        border-radius: 80px;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top: -80px;
+       border: 6px solid rgba(255, 255, 255, .8);
+    }  
+    &--last{
+        margin-bottom: 0;
+        @mixin atMedium{
+            margin-bottom: 2rem;
+        }
+        
+    }
+    &__title{
+        color: $couleurPrincipale;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+
+    }
+    &__subtitle{
+        color: $monorange;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: .6rem 0 1rem 0;
+    }
+    
+}

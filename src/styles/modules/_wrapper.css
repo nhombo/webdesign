@@ -2,6 +2,19 @@
     overflow: hidden;
     padding: 0 18px;
     max-width: 1236px;
+    &--no-padding-until-medium{
+        padding: 0;
+        &mixin atMedium{
+            padding: 0 18px;
+        }
+    }
+    &--no-padding-until-large{
+        padding: 0;
+        &mixin atLarge{
+            padding: 0 18px;
+        }
+    }
+
     margin-left: auto;
     margin-right: auto; 
     &--medium{
@@ -17,4 +30,5 @@
         margin-bottom: 4rem;
     }
  }
+ &--flex{}
 }

@@ -1,3 +1,4 @@
+
 .page-section{
     margin: 2rem 0;
     @mixin atSmall{
@@ -8,8 +9,16 @@
         background-color: #647745;
         
     }
-    &__t-margin{
-        
+
+    &--testimonials{
+        margin-top: -2rem;
+        background-color: rgba(150, 168, 178, .5);
+        @mixin atLarge{
+            margin-top: -4rem;
+            background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover;
+        }
+       
     }
-    
+
 }

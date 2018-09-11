@@ -1,0 +1,12 @@
+.ligne {
+  @mixin clearfix;
+
+  &__3 {
+    float: left;
+    width: 50%;
+  }
+  &__goutieres > div {
+    padding-right: 4rem;
+  }
+
+}

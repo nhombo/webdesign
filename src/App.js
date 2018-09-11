@@ -134,91 +134,138 @@ class App extends Component {
           </div>
         </div>
 
-        <div id="features" className="page-section page-section--bgFeatures">
+        <div
+          id="features"
+          className="page-section page-section--bgFeatures generic-content-container"
+        >
           <div className="wrapper">
-            <img src={iconStar} />
-            <h2>Our Features</h2>
+            <h2 className="section-title">
+              {" "}
+              <img className="section-title__icon" src={iconStar} />
+              Our <strong>Features</strong>
+            </h2>
+            <div className="row row--gutters-larger">
+              <div className="row__medium-6">
+                <div className="feature-item">
+                  <img className="feature-item__icon" src={iconRain} />
+                  <h2 className="feature-item__title">
+                    We&rsquo;ll Watch the Weather
+                  </h2>
+                  <p>
+                    Download our app and we&rsquo;ll send you a notice if
+                    it&rsquo;s about to rain in the next 20 minutes around your
+                    current location. A good rain can be refreshing, but
+                    sometimes you just want to stay dry.
+                  </p>
+                </div>
+                <div className="feature-item">
+                  <img className="feature-item__icon" src={iconGloble} />
 
-            <img src={iconRain} />
-            <h3>We&rsquo;ll Watch the Weather</h3>
-            <p>
-              Download our app and we&rsquo;ll send you a notice if it&rsquo;s
-              about to rain in the next 20 minutes around your current location.
-              A good rain can be refreshing, but sometimes you just want to stay
-              dry.
-            </p>
+                  <h2 className="feature-item__title">Global Guides</h2>
+                  <p>
+                    We&rsquo;ve scoured the entire planet for the best retreats
+                    and beautiful vistas. If there&rsquo;s a corner of the world
+                    you want to escape to we know the most scenic and inspiring
+                    locations.
+                  </p>
+                </div>
+              </div>
+              <div className="row__medium-6">
+                <div className="feature-item">
+                  <img className="feature-item__icon" src={iconWifi} />
 
-            <img src={iconGloble} />
-            <h3>Global Guides</h3>
-            <p>
-              We&rsquo;ve scoured the entire planet for the best retreats and
-              beautiful vistas. If there&rsquo;s a corner of the world you want
-              to escape to we know the most scenic and inspiring locations.
-            </p>
+                  <h2 className="feature-item__title">Wi-Fi Waypoints</h2>
+                  <p>
+                    We only send you on trips to places we can personally vouch
+                    for as being amazing. Which means we&rsquo;ve mapped out
+                    where local wi-fi spots are and marked them in our
+                    app&rsquo;s map view.
+                  </p>
+                </div>
+                <div className="feature-item">
+                  <img className="feature-item__icon" src={iconFire} />
 
-            <img src={iconWifi} />
-            <h3>Wi-Fi Waypoints</h3>
-            <p>
-              We only send you on trips to places we can personally vouch for as
-              being amazing. Which means we&rsquo;ve mapped out where local
-              wi-fi spots are and marked them in our app&rsquo;s map view.
-            </p>
-
-            <img src={iconFire} />
-            <h3>Survival Kit</h3>
-            <p>
-              Everytime you book an escape with us we send you a survival kit
-              with the finest materials. The kit will allow you to setup a tent,
-              start a fire, scratch your own back and lower your taxes.
-            </p>
+                  <h2 className="feature-item__title">Survival Kit</h2>
+                  <p>
+                    Everytime you book an escape with us we send you a survival
+                    kit with the finest materials. The kit will allow you to
+                    setup a tent, start a fire, scratch your own back and lower
+                    your taxes.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div id="testimonials">
-          <img src={iconComment} />
-          <h2>Real Testimonials</h2>
-
-          <img src={iconTestiJane} />
-          <h3>Jane Doe</h3>
-          <h3>9 Time Escaper</h3>
-          <p>
-            &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.&rdquo;
-          </p>
-
-          <img src={iconTestiJohn} />
-          <h3>John Smith</h3>
-          <h3>4 Time Escaper</h3>
-          <p>
-            &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;
-          </p>
-
-          <img src={iconTestiCat} />
-          <h3>Cat McKitty</h3>
-          <h3>6 Time Escaper</h3>
-          <p>
-            &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;
-          </p>
+        <div id="testimonials" className="page-section page-section--testimonials">
+        <div className="wrapper wrapper--no-padding-until-large">
+            
+            <h2 className="section-title section-title--green"><img className="section-title__icon" src={iconComment} />Real<strong> Testimonials</strong></h2>
+            <div class="row row--gutters row--t-padding row--equal-height-at-large generic-content-container"> 
+            <div className="row__large-4">
+            <div className="testimonial">
+            <div className="testimonial__photo">
+              <img src={iconTestiJane}/>
+              </div>
+              <h3 className="testimonial__title">Jane Doe</h3>
+              <h4 className="testimonial__subtitle"> 9 Time Escaper</h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.&rdquo;
+              </p>
+              </div>
+            </div>
+            <div className="row__large-4">
+            <div className="testimonial ">
+            <div className="testimonial__photo">
+              <img src={iconTestiJohn} />
+              </div>
+              <h3 className="testimonial__title">John Smith</h3>
+              <h4 className="testimonial__subtitle">4 Time Escaper</h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur.&rdquo;
+              </p>
+              </div>
+            </div>
+            <div className="row__large-4">
+            <div className="testimonial testimonial--last">
+            <div className="testimonial__photo">
+              <img src={iconTestiCat} />
+              </div>
+              <h3 className="testimonial__title">Cat McKitty</h3>
+              <h4 className="testimonial__subtitle">6 Time Escaper</h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut.&rdquo;
+              </p>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
 
         <footer>
+        <div className="footer">
           <p>
             Copyright &copy; 2016 Clear View Escapes. All rights reserved.{" "}
             <a className="btn btn--orange" href="#">
               Get in Touch
             </a>
           </p>
+          </div>
         </footer>
       </div>
     );
